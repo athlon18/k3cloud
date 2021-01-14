@@ -1,8 +1,7 @@
-package k3cloud
+package service
 
 import (
 	"fmt"
-	"github.com/athlon18/k3cloud/service"
 	_fill "github.com/athlon18/k3cloud/service/fill"
 	voucher2 "github.com/athlon18/k3cloud/service/fill/voucher/save"
 	"testing"
@@ -67,7 +66,7 @@ func TestApi(t *testing.T) {
 	root.Model = model
 	//bb, _ := json.Marshal(root)
 	//fmt.Println(string(bb))
-	service.K3configInit(url, accID, username, password).
+	K3configInit(url, accID, username, password).
 		Login().
 		SaveVoucher(root).
 		Print()

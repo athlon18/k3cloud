@@ -69,6 +69,6 @@ func TestApi(t *testing.T) {
 	//fmt.Println(string(bb))
 	service.K3configInit(url, accID, username, password).
 		Login().
-		Voucher(root).
+		SaveVoucher(root).
 		Print()
 }

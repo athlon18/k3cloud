@@ -45,7 +45,7 @@ func (k3config *K3config) Login() *K3config {
 /**
 凭证写入
 */
-func (k3config *K3config) Voucher(root _struct.Root) *K3config {
+func (k3config *K3config) SaveVoucher(root _struct.Root) *K3config {
 
 	//root.Model
 	formParams := util.CreateBusinessPostData("GL_VOUCHER", util.Struct2Map(root))

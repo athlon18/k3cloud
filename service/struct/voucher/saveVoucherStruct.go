@@ -11,6 +11,7 @@ type Model struct {
 	FDocumentStatus  string      `json:"FDocumentStatus"`
 	FYEAR            string      `json:"FYEAR"`
 	FSourceBillKey   interface{} `json:"FSourceBillKey"`
+	FCreatorId       interface{} `json:"FCreatorId"`
 	FPERIOD          string      `json:"FPERIOD"`
 	FIMPORTVERSION   string      `json:"FIMPORTVERSION"`
 	FEntity          []FEntity   `json:"FEntity"`
@@ -54,4 +55,5 @@ type FDetailID struct {
 	FDETAILIDFF103001 interface{} `json:"FDETAILID__FF103001,omitempty"`
 	FDETAILIDFF102001 interface{} `json:"FDETAILID__FF102001,omitempty"`
 	FDETAILIDFF100501 interface{} `json:"FDETAILID__FF100501,omitempty"`
+	FDETAILIDFF103501 interface{} `json:"FDETAILID__FF103501,omitempty"`
 }

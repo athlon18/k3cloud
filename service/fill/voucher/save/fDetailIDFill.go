@@ -103,6 +103,11 @@ func (this *fDetailID) FDETAILIDFF100501(str string) *fDetailID {
 	return this
 }
 
+func (this *fDetailID) FDETAILIDFF103501(str string) *fDetailID {
+	this.fDetailID.FDETAILIDFF103501 = util.FNumber(str)
+	return this
+}
+
 func (this *fDetailID) Get() voucher.FDetailID {
 	return this.fDetailID
 }

@@ -15,7 +15,7 @@ func ModelInit() *model {
 	model.model.FAccountBookID = util.FNumber("")
 	model.model.FVOUCHERGROUPID = util.FNumber("PRE001")
 	model.model.FSourceBillKey = util.FNumber("78050206-2fa6-40e3-b7c8-bd608146fa38")
-	model.model.FVOUCHERGROUPNO = "0"
+	model.model.FVOUCHERGROUPNO = ""
 	model.model.FDocumentStatus = "Z"
 	model.model.FISADJUSTVOUCHER = false
 	return model
